@@ -1,0 +1,79 @@
+body {
+  color: #d2dcdd;
+  font-family: "STIX Two Text", serif;
+}
+
+p {
+  width: 85%;
+  padding: 20px 0px 40px 0px;
+  font-size: 18px;
+}
+.container {
+  align-self: center;
+  padding-top: 30px;
+  border-radius: 10px;
+  border: #d2dcdd;
+  display: flex;
+  width: 70%;
+  height: 90%;
+  margin: auto;
+}
+
+.sedans {
+  float: left;
+  background-color: #e28525;
+  border-radius: 20px 0px 0px 20px;
+  padding: 70px 20px 30px 40px;
+}
+
+.suvs {
+  float: left;
+  background-color: #016972;
+  padding: 70px 20px 30px 40px;
+}
+
+.luxury {
+  float: left;
+  background-color: #00403f;
+  border-radius: 0px 20px 20px 0px;
+  padding: 70px 20px 30px 40px;
+}
+
+.button1 {
+  background-color: #f2f2f2;
+  color: #e28525;
+  border-radius: 28px;
+  font-weight: 500 bold;
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 16px;
+  border: none;
+  width: 150px;
+  height: 43px;
+}
+
+.button2 {
+  background-color: #f2f2f2;
+  color: #016972;
+  border-radius: 28px;
+  font-weight: 500 bold;
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 40px;
+  border: none;
+  width: 150px;
+  height: 43px;
+}
+
+.button3 {
+  background-color: #f2f2f2;
+  color: #00403f;
+  border-radius: 28px;
+  font-weight: 500 bold;
+  font-size: medium;
+  margin-left: 30px;
+  margin-top: 40px;
+  border: none;
+  width: 150px;
+  height: 43px;
+}
