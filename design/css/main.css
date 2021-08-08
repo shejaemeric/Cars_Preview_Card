@@ -4,8 +4,8 @@ body {
 }
 
 p {
-  width: 85%;
-  padding: 20px 0px 40px 0px;
+  width: 90%;
+  padding: 20px 0px 50px 0px;
   font-size: 18px;
 }
 .container {
@@ -14,7 +14,7 @@ p {
   border-radius: 10px;
   border: #d2dcdd;
   display: flex;
-  width: 70%;
+  width: 69%;
   height: 90%;
   margin: auto;
 }
@@ -24,12 +24,14 @@ p {
   background-color: #e28525;
   border-radius: 20px 0px 0px 20px;
   padding: 70px 20px 30px 40px;
+  animation: pulse 10s;
 }
 
 .suvs {
   float: left;
   background-color: #016972;
   padding: 70px 20px 30px 40px;
+  animation: pulse 10s;
 }
 
 .luxury {
@@ -37,37 +39,31 @@ p {
   background-color: #00403f;
   border-radius: 0px 20px 20px 0px;
   padding: 70px 20px 30px 40px;
+  animation: pulse 10s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
 }
 
 .button1 {
-  background-color: #f2f2f2;
   color: #e28525;
-  border-radius: 28px;
-  font-weight: 500 bold;
-  font-size: medium;
-  margin-left: 30px;
-  margin-top: 16px;
-  border: none;
-  width: 150px;
-  height: 43px;
+  top: -43px;
 }
-
 .button2 {
-  background-color: #f2f2f2;
   color: #016972;
-  border-radius: 28px;
-  font-weight: 500 bold;
-  font-size: medium;
-  margin-left: 30px;
-  margin-top: 40px;
-  border: none;
-  width: 150px;
-  height: 43px;
 }
-
+.button3 {
+  color: #00403f;
+}
+.button1,
+.button2,
 .button3 {
   background-color: #f2f2f2;
-  color: #00403f;
+  position: relative;
+  bottom: 5%;
   border-radius: 28px;
   font-weight: 500 bold;
   font-size: medium;
@@ -76,4 +72,23 @@ p {
   border: none;
   width: 150px;
   height: 43px;
+  mix-blend-mode: screen;
+  font-family: "Lexend Deca", sans-serif;
+  transition: 0.2s all;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  cursor: pointer;
+  background-color: hsl(0, 3%, 94%);
+  transform: scale(1.05, 1.05);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 15vh;
+  }
 }
